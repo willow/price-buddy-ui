@@ -1,0 +1,84 @@
+@import "../base";
+
+#home-container {
+  
+ .page-header {
+   border-bottom: 0px;
+  }
+  
+  #welcome-blurb {
+    
+    background: $untitled-very-bright url('../images/bg/book-screen.jpg') repeat-x;
+    background-size: contain;
+    
+    @media screen and (min-width: $screen-phone) {
+      margin-top: 50px;
+    }
+    
+    @media screen and (min-width: $screen-tablet) {
+      padding-bottom: 30px;
+      margin-top: 80px;
+    }
+    
+    .btn {
+      background-color: $brand-button;
+      color: $untitled-off-white;
+    }
+    
+    .btn:hover {
+      background-color: $untitled-very-dark;
+    }
+    
+    h1 {
+      color: $untitled-very-dark;
+      @media screen and (min-width: $screen-tablet) {
+        font-size: ($font-size-base * 2.8571);
+      }
+    }
+    
+    h6 {
+      @media screen and (min-width: $screen-tablet) {
+        font-size: ($font-size-base * 1.2857);
+      }
+      
+    }
+  }
+  
+  #genre-selector {
+    
+    #genre-selector-explanation {
+      @media screen and (min-width: $screen-tablet) {
+        font-size: ($font-size-base * 1.2857);
+      }
+    }
+    
+    p {
+      @media screen and (min-width: $screen-tablet) {
+        padding: 10px;
+      }
+    }
+    
+  }
+  
+  #book-selector {
+    
+    .arrow-background {
+      color: $untitled-medium-bright;
+      @media screen and (min-width: $screen-tablet) {
+        margin-top: 63px;
+      }
+    }
+    
+   .arrow-background:hover {
+      color: $untitled-less-bright;
+    }
+    
+   .book-image {
+     @media screen and (min-width: $screen-tablet) { 
+       height: 235px;
+       width: 153px;
+     }
+   }
+    
+  }
+}

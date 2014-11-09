@@ -1,0 +1,115 @@
+#home-container(ng-controller='HomeCtrl')
+  
+  section#welcome-blurb
+    .container
+      .row
+        .col-md-9.col-md-offset-3
+          h1 Find your next comp title.
+      .row
+        .col-md-9.col-md-offset-3
+          h6 Enter some titles that are somewhat realted to your book
+      .row
+        .col-md-9.col-md-offset-3
+          form(role='form',ng-submit='')
+            .input-group.col-md-6
+              input#search-location.form-control(type='text',ng-model='', placeholder='The Hunger Games')
+              span.input-group-btn
+                button.btn.btn-default(type='button') Search
+    
+  section#genre-selector.section
+    .container.page-header
+      .row
+        #genre-selector-explanation.col-md-2.col-md-offset-3
+          p.bordered-table Select the genres that resemble your book.
+        .col-md-5
+          .bordered-table
+            table.table.table-responsive
+              thead
+                tr
+                  td
+                    i.fa.fa-check
+                    |test1
+                  td
+                    i.fa.fa-check
+                    |test2
+                  td
+                    i.fa.fa-check
+                    |test3
+              tbody
+                tr
+                  td
+                    i.fa.fa-check
+                    |test
+                  td
+                    i.fa.fa-check
+                    |test 2
+                  td
+                    i.fa.fa-check
+                    |test3
+                tr
+                  td
+                    |here
+                  
+   section#book-selector.section
+    .container.page-header
+      .row
+        .col-md-1.col-md-offset-1
+          i.fa.fa-arrow-circle-left.fa-4x.arrow-background
+        .col-md-8
+          .row
+            .col-md-4
+              .row
+                .col-md-12
+                  img(src='../images/hg-cover.jpg').img-responsive.book-image
+                  table.table.bordered-table.table-responsive
+                    thead
+                      tr
+                        td
+                          | Genre1
+                      tr
+                        td
+                          | Genre2
+                      tr
+                        td
+                          | Genre3
+                      tr
+                        td
+                          | Genre4
+            .col-md-4
+              .row
+                .col-md-12
+                  img(src='../images/hg-cover.jpg').img-responsive.book-image
+                  table.table.bordered-table.table-responsive
+                    thead
+                      tr
+                        td
+                          | Genre1
+                      tr
+                        td
+                          | Genre2
+                      tr
+                        td
+                          | Genre3
+                      tr
+                        td
+                          | Genre4
+            .col-md-4
+              .row
+                .col-md-12
+                  img(src='../images/hg-cover.jpg').img-responsive.book-image
+                  table.table.bordered-table.table-responsive
+                    thead
+                      tr
+                        td
+                          | Genre1
+                      tr
+                        td
+                          | Genre2
+                      tr
+                        td
+                          | Genre3
+                      tr
+                        td
+                          | Genre4
+        .col-md-1
+          i.fa.fa-arrow-circle-right.fa-4x.arrow-background

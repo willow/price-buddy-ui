@@ -1,0 +1,10 @@
+section.parent-form#description-step(ng-show="isCurrentStep('descriptionStep')", ng-form='descriptionStepForm',ng-controller='SearchWizardDescriptionCtrl')
+  .page-header
+    h1.text-center Step Two: Tell us about yourself
+  .alert.alert-info
+    p#search-info-message Describe who you are and what you're looking for. Don't worry about price and other desired amenities - that comes later.
+  .form-group
+    label.col-md-2.col-md-offset-2.control-label(for='txt-description') Description
+      span.required*
+    .col-md-5
+      textarea#txt-description.form-control(placeholder="Hi, my name is Amy! I'm looking for a place within walking distance of...", ng-model='model.search.search_attrs.description', required)

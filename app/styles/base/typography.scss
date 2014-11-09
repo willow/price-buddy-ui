@@ -1,0 +1,19 @@
+@import "../base";
+
+// Basic Type Styles
+// --------------------------------------------------
+
+p {
+  color: $untitled-gray;
+  font-family: $untitled-font-family-content;
+}
+
+.generated-info{
+  white-space: pre-wrap;
+  line-height: 18px;
+}
+
+.heavy-emphasis{
+  font-weight: 900;
+  text-decoration: underline;
+}

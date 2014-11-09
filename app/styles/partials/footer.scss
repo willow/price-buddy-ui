@@ -1,0 +1,18 @@
+@import "../base";
+
+footer#main-footer {
+  padding: 20px 0px;
+  background-color: $untitled-very-dark;
+
+  a {
+    color: $untitled-less-bright;
+    &:hover,
+    &:focus {
+      color: darken($untitled-less-bright, 15%);
+    }
+  }
+
+  .copyright{
+    color: $untitled-less-bright;
+  }
+}

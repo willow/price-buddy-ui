@@ -1,0 +1,17 @@
+@import "../base";
+
+#thank-you-container {
+  #thank-you-section {
+    a:link {
+    	color: $untitled-less-bright;
+    }
+
+    h1{
+      margin-bottom: 40px;
+    }
+
+    #email-us{
+      margin-top: 40px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+#apartment-list-section(ng-controller='ApartmentResultListCtrl').container
+  .row
+    #apartment-list.col-md-4
+      .row(ng-repeat="apartment in model.apartmentList")
+        .page-header(
+        ui-event="{mouseover : 'highlightApartment(apartment)',mouseout : 'unhighlightApartment(apartment)',click : 'displayApartment(apartment)'}"
+        )
+          .row.apartment-overview
+            h5.col-md-7 {{apartment.address}}
+            .col-md-5
+              ng-switch(on='apartment.availability_system_name')
+                ng-switch(ng-switch-when='unknown_availability')
+                  .badge.unknown Availability Unknown
+                ng-switch(ng-switch-when='available')
+                  .badge.available Verified Available
+                ng-switch(ng-switch-when='unavailable')
+                  .badge.unavailable Verified Unavailable
+                ng-switch(ng-switch-when='different_user_notified_unavailable')
+                  .badge.unavailable Verified Unavailable
+          .row.apartment-details
+            .col-md-2.col-md-offset-1.detail
+              p ${{apartment.price}}
+              p.help-block price
+            .col-md-2.detail
+              p {{apartment.bedroom_count}}
+              p.help-block bed
+            .col-md-2.detail
+              p {{apartment.bathroom_count}}
+              p.help-block bath
+            .col-md-3.detail
+              p {{apartment.sqfeet}}
+              p.help-block area
+          ng-switch(on='state.current.data.style.AdminStyle')
+            ng-switch(ng-switch-when='true')
+              .row.apartment-context
+                .col-md-4
+                  .badge {{apartment.last_updated_date | fromNow}}
+                .col-md-4
+                  .badge {{apartment.broker_fee}}
+                .col-md-4
+                  button.btn.btn-primary.btn-xs(ng-click='addApartment($event, apartment)',type='button') Add
+            ng-switch(ng-switch-default)
+              .row.apartment-context
+                .col-md-4
+                  .badge {{apartment.last_updated_date | fromNow}}
+                .col-md-4
+                  .badge {{apartment.compliance_score}}% Match
+                .col-md-4
+                  .badge {{apartment.broker_fee}}
+
+    #map-list.col-md-8
+      ng-switch(on='state.current.data.style.AdminStyle')
+        ng-switch(ng-switch-when='true')
+          .map-canvas(
+          ui-map='searchMap',
+          ui-options='mapOptions',
+          google-maps-drawabble-map,google-maps-searchable-map,
+          ui-event="{'map-polygoncomplete': 'addDesiredHomeArea($event, $params)','map-click': 'removeDesiredHomeArea($event, $params)'}"
+          template-url="/_public/js/apartment/apartment-map-info-box.html"
+          )
+        ng-switch(ng-switch-default)
+          .map-canvas(
+          ui-map='searchMap',
+          ui-options='mapOptions',
+          google-maps-read-only-map,google-maps-searchable-map,
+          template-url="/_public/js/apartment/apartment-map-info-box.html"
+          )
