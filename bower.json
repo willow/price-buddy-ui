@@ -20,26 +20,5 @@
     "lodash": "2.4.1",
     "bootstrap-sass-official": "3.3.0",
     "momentjs": "2.5.1"
-  },
-  "overrides": {
-    "angular-ui-utils": {
-      "main": [
-        "./modules/utils.js",
-        "./modules/event/event.js",
-        "./modules/format/format.js",
-        "./modules/highlight/highlight.js",
-        "./modules/indeterminate/indeterminate.js",
-        "./modules/inflector/inflector.js",
-        "./modules/jq/jq.js",
-        "./modules/keypress/keypress.js",
-        "./modules/mask/mask.js",
-        "./modules/reset/reset.js",
-        "./modules/route/route.js",
-        "./modules/scrollfix/scrollfix.js",
-        "./modules/showhide/showhide.js",
-        "./modules/unique/unique.js",
-        "./modules/validate/validate.js"
-      ]
-    }
   }
 }
