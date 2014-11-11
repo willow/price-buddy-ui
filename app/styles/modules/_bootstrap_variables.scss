@@ -27,7 +27,7 @@ $brand-primary: $src-very-dark !default;
 $brand-heading: $src-gray !default;
 $brand-success: $src-medium-bright !default;
 $brand-nav: $src-very-bright !default;
-$brand-button: $src-less-bright !default;
+$brand-button: $src-less-dark !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 $brand-info: $src-less-dark !default;
@@ -150,7 +150,7 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color: $src-less-bright !default;
+$btn-default-color:              $brand-button !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
