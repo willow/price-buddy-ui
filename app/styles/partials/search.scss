@@ -3,7 +3,7 @@
 #search-wizard-container {
   #search-wizard-section {
     h1 {
-      color: $untitled-less-bright;
+      color: $src-less-bright;
 
       //- Responsive
       @media screen and (min-width: $screen-tablet) {
@@ -23,7 +23,7 @@
     #location-step {
       #search-info-message {
         a {
-          color: $untitled-less-dark;
+          color: $src-less-dark;
         }
       }
       #map-help {

@@ -6,29 +6,35 @@
 // Brand Colors
 // --------------------------------------------------
 
+$white: #FFF;
+$baby-blue: #17BAEF;
+$firm-blue: #0A7396;
+$excited-orange:#F2C94F;
+
+
 $threadless: #1B325F;
 $threadless-light: #9CC4E4;
 $threadless-box: #E9F2F9;
 $yay-threadless: #3A89C9;
 $meloin: #F26C4F;
 
-$untitled-very-bright: $threadless-box;
-$untitled-medium-bright: $threadless-light;
-$untitled-less-bright: $yay-threadless;
-$untitled-less-dark: $meloin;
-$untitled-very-dark: $threadless;
+$src-very-bright: $white;
+$src-medium-bright: $baby-blue;
+$src-less-bright: $excited-orange;
+$src-less-dark: $firm-blue;
+$src-very-dark: $threadless;
 
-$untitled-gray: #595959;
-$untitled-off-white: #F7F7F7;
+$src-gray: #595959;
+$src-off-white: #F7F7F7;
 
 // Font
 // --------------------------------------------------
 
-$untitled-font-family-heading:  Montserrat, Helvetica, Arial, sans-serif !default;
-$untitled-font-family-content:  "Open Sans", Helvetica, Arial, sans-serif !default;
+$src-font-family-heading:  Montserrat, Helvetica, Arial, sans-serif !default;
+$src-font-family-content:  Lato, Helvetica, Arial, sans-serif !default;
 
 
 // Container Colors
 // --------------------------------------------------
-$untitled-alt-container-bottom: #dbdbdb;
-$untitled-alt-container-bottom-shadow: #ffffff;
+$src: #dbdbdb;
+$src: #ffffff;

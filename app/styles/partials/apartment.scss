@@ -12,8 +12,8 @@
   }
 
   p {
-    font-family: $untitled-font-family-heading;
-    color: $untitled-less-dark;
+    font-family: $src-font-family-heading;
+    color: $src-less-dark;
     text-align: center;
 
     //- Responsive
@@ -23,7 +23,7 @@
 
     &.help-block {
       text-transform: uppercase;
-      color: $untitled-less-bright;
+      color: $src-less-bright;
 
       //- Responsive
       @media screen and (min-width: $screen-tablet) {
@@ -48,7 +48,7 @@
       &:hover,
       &:focus {
         cursor: pointer;
-        background-color: rgba($untitled-medium-bright, .1);
+        background-color: rgba($src-medium-bright, .1);
       }
     }
 
@@ -62,7 +62,7 @@
           background-color: $brand-info;
         }
         &.available {
-          background-color: $untitled-less-bright;
+          background-color: $src-less-bright;
         }
         &.unavailable {
           background-color: $brand-warning;
@@ -84,7 +84,7 @@
       }
 
       .badge {
-        background-color: $untitled-less-bright;
+        background-color: $src-less-bright;
         width: 100%;
         padding: 4px 10px;
       }
@@ -116,8 +116,8 @@
   h3 {
     margin-top: 0;
     margin-bottom: 0;
-    color: $untitled-very-bright;
-    background-color: $untitled-very-dark;
+    color: $src-very-bright;
+    background-color: $src-very-dark;
     padding: 4px;
     font-weight: bold;
 
@@ -134,7 +134,7 @@
 
     .help-block {
       text-transform: uppercase;
-      color: $untitled-less-bright;
+      color: $src-less-bright;
       margin-bottom: 0;
       //- Responsive
       @media screen and (min-width: $screen-tablet) {
@@ -179,7 +179,7 @@
         font-size: $font-size-base;
       }
       i {
-        color: $untitled-less-bright;
+        color: $src-less-bright;
       }
       .listing-link{
         @include hyphens();

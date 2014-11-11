@@ -1,11 +1,8 @@
 nav#main-nav.navbar.navbar-default.navbar-fixed-top(ng-class="{'hidden':state.current.data.style.AdminStyle}")
-  .container-fluid
+  .container
     .navbar-header
       a.navbar-brand(href='../')
-        span#quiet
-          | Un
-        span#loud
-          | Titled
+        | PriceBuddy
       button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
         span.icon-bar
         span.icon-bar
@@ -13,6 +10,10 @@ nav#main-nav.navbar.navbar-default.navbar-fixed-top(ng-class="{'hidden':state.cu
     #navbar-main.navbar-collapse.collapse
       ul.nav.navbar-nav.navbar-right
         li
-          a(ui-sref="recommendations") Recommendations
+          a(ui-sref="recommendations") About
         li
-          a(ui-sref="mybooks") My Books
+          a(ui-sref="mybooks") Listings
+        li
+          a(ui-sref="mybooks") Cities
+        li
+          a(ui-sref="mybooks") Contact

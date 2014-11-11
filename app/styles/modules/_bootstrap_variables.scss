@@ -17,27 +17,27 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-darker:            darken($untitled-gray, 20%) !default; // #222
-$gray-dark:              darken($untitled-gray, 13.5%) !default;   // #333
-$gray:                   $untitled-gray !default; // #555
-$gray-light:             lighten($untitled-gray, 60%) !default;   // #999
-$gray-lighter:           lighten($untitled-gray, 93.5%) !default; // #eee
+$gray-darker:            darken($src-gray, 20%) !default; // #222
+$gray-dark:              darken($src-gray, 13.5%) !default;   // #333
+$gray: $src-gray !default; // #555
+$gray-light:             lighten($src-gray, 60%) !default;   // #999
+$gray-lighter:           lighten($src-gray, 93.5%) !default; // #eee
 
-$brand-primary: $untitled-very-dark !default;
-$brand-heading: $untitled-gray !default;
-$brand-success: $untitled-medium-bright !default;
-$brand-nav: $untitled-very-bright !default;
-$brand-button: $untitled-less-bright !default;
+$brand-primary: $src-very-dark !default;
+$brand-heading: $src-gray !default;
+$brand-success: $src-medium-bright !default;
+$brand-nav: $src-very-bright !default;
+$brand-button: $src-less-bright !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
-$brand-info: $untitled-less-dark !default;
+$brand-info: $src-less-dark !default;
 
 //== Scaffolding
 //
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $untitled-off-white !default;
+$body-bg: $src-off-white !default;
 //** Global text color on `<body>`.
 $text-color:            $gray !default;
 
@@ -51,7 +51,7 @@ $link-hover-color:      darken($link-color, 15%) !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: $untitled-font-family-heading !default;
+$font-family-sans-serif: $src-font-family-heading !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
@@ -150,7 +150,7 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              $untitled-less-bright !default;
+$btn-default-color: $src-less-bright !default;
 $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
@@ -352,7 +352,7 @@ $navbar-default-border:            lighten($navbar-default-bg, 66.5%) !default;
 
 // Navbar links
 $navbar-default-link-color:                $brand-heading !default;
-$navbar-default-link-hover-color: $untitled-less-bright !default;
+$navbar-default-link-hover-color: $src-less-bright !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
@@ -391,9 +391,9 @@ $navbar-inverse-brand-hover-color:          #fff !default;
 $navbar-inverse-brand-hover-bg:             transparent !default;
 
 // Inverted navbar toggle
-$navbar-inverse-toggle-hover-bg: $untitled-less-bright !default;
+$navbar-inverse-toggle-hover-bg: $src-less-bright !default;
 $navbar-inverse-toggle-icon-bar-bg:         #fff !default;
-$navbar-inverse-toggle-border-color: $untitled-less-bright !default;
+$navbar-inverse-toggle-border-color: $src-less-bright !default;
 
 
 //== Navs
@@ -667,7 +667,7 @@ $list-group-active-border:      $list-group-active-bg !default;
 $list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
 
 $list-group-link-color:         #555 !default;
-$list-group-link-heading-color: $untitled-less-bright !default;
+$list-group-link-heading-color: $src-less-bright !default;
 
 
 //== Panels

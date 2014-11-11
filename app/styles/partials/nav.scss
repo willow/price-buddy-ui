@@ -3,8 +3,8 @@
 #main-nav {
   
   &.navbar-default {
-    border-bottom: 1px solid $untitled-alt-container-bottom;
-    @include box-shadow(0px 1px $untitled-alt-container-bottom-shadow);
+    background-color: $src-medium-bright;
+    border: 0;
   }
   
   .navbar-header {
@@ -18,21 +18,15 @@
     @media screen and (min-width: $screen-tablet) {
       margin-top: 30px;
     }
+    color: $src-less-dark;
   }
   
   .navbar-brand {
-   
     @media screen and (min-width: $screen-tablet) {
-      font-size: ($font-size-base * 4.142857142857143)
+      font-size: ($font-size-base * 2)
     }
-    
-    #quiet {
-      color: $untitled-very-dark;
-      font-family: $untitled-font-family-content;
-    }
-    
-    #loud {
-      color: $untitled-less-dark;
-    }
+
+    color: $src-very-bright;
+    font-weight: bold;
   }
 }
