@@ -31,6 +31,7 @@
 
     h1 {
       color: $src-very-dark;
+      font-weight: bold;
       @media screen and (min-width: $screen-tablet) {
         font-size: ($font-size-base * 7);
       }
