@@ -15,106 +15,42 @@
 
       form.form-horizontal(role='form')
         .form-group
-          label.col-md-2.col-md-offset-1.control-label Room Type
-          .col-md-3
-            .dropdown
-              button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
-                | Select
-              ul.dropdown-menu
-                li
-                  a Private Room
+          label.col-md-2.col-md-offset-2.control-label Room Type
+          .col-md-2
+            select.form-control
+              option Private Room
+          label.col-md-2.control-label Room Type
+          .col-md-2
+            select.form-control
+              option Private Room
+        .form-group
+          label.col-md-2.col-md-offset-2.control-label Size
+          .col-md-2
+            select.form-control
+              option Private Room
+          .col-md-2
+           select.form-control
+              option Private Room
+          .col-md-2
+            select.form-control
+              option Private Room
+        .form-group
+          label.col-md-2.col-md-offset-2.control-label Zip Code
+          .col-md-2
+            input.form-control(type='text')
+        .form-group
+          label.col-md-2.col-md-offset-2.control-label Amenities
+          .col-md-2
+            label.checkbox-inline
+              input(type="checkbox", id="inlineCheckbox1", value="option1")
+              | Wireless Internet
+          .col-md-2
+            label.checkbox-inline
+              input(type="checkbox", id="inlineCheckbox1", value="option1")
+              | Wireless Internet
+          .col-md-2
+            label.checkbox-inline
+              input(type="checkbox", id="inlineCheckbox1", value="option1")
+              | Wireless Internet
       .row
-        #genre-selector-explanation.col-md-2.col-md-offset-3
-          p.bordered-table Select the genres that resemble your book.
-        .col-md-5
-          .bordered-table
-            table.table.table-responsive
-              thead
-                tr
-                  td
-                    i.fa.fa-check
-                    |test1
-                  td
-                    i.fa.fa-check
-                    |test2
-                  td
-                    i.fa.fa-check
-                    |test3
-              tbody
-                tr
-                  td
-                    i.fa.fa-check
-                    |test
-                  td
-                    i.fa.fa-check
-                    |test 2
-                  td
-                    i.fa.fa-check
-                    |test3
-                tr
-                  td
-                    |here
-                  
-   section#book-selector.section
-    .container.page-header
-      .row
-        .col-md-1.col-md-offset-1
-          i.fa.fa-arrow-circle-left.fa-4x.arrow-background
-        .col-md-8
-          .row
-            .col-md-4
-              .row
-                .col-md-12
-                  img(src='../images/hg-cover.jpg').img-responsive.book-image
-                  table.table.bordered-table.table-responsive
-                    thead
-                      tr
-                        td
-                          | Genre1
-                      tr
-                        td
-                          | Genre2
-                      tr
-                        td
-                          | Genre3
-                      tr
-                        td
-                          | Genre4
-            .col-md-4
-              .row
-                .col-md-12
-                  img(src='../images/hg-cover.jpg').img-responsive.book-image
-                  table.table.bordered-table.table-responsive
-                    thead
-                      tr
-                        td
-                          | Genre1
-                      tr
-                        td
-                          | Genre2
-                      tr
-                        td
-                          | Genre3
-                      tr
-                        td
-                          | Genre4
-            .col-md-4
-              .row
-                .col-md-12
-                  img(src='../images/hg-cover.jpg').img-responsive.book-image
-                  table.table.bordered-table.table-responsive
-                    thead
-                      tr
-                        td
-                          | Genre1
-                      tr
-                        td
-                          | Genre2
-                      tr
-                        td
-                          | Genre3
-                      tr
-                        td
-                          | Genre4
-        .col-md-1
-          i.fa.fa-arrow-circle-right.fa-4x.arrow-background
+        button.btn.btn-primary.btn-lg.center-block Tell Me

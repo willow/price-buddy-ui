@@ -2,17 +2,17 @@
 
 footer#main-footer {
   padding: 20px 0px;
-  background-color: $src-very-dark;
+  background-color: $src-medium-bright;
 
   a {
-    color: $src-less-bright;
+    color: $src-very-bright;
     &:hover,
     &:focus {
-      color: darken($src-less-bright, 15%);
+      color: darken($src-very-bright, 15%);
     }
   }
 
   .copyright{
-    color: $src-less-bright;
+    color: $src-very-bright;
   }
 }

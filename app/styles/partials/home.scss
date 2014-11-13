@@ -73,5 +73,32 @@
       color: $src-very-dark;
       font-weight: bold;
     }
+
+    .form-group {
+      margin-top: 30px;
+      &:last-child {
+        margin-bottom: 35px;
+      }
+    }
+
+    label {
+      @media screen and (min-width: $screen-tablet) {
+        font-size: ($font-size-base * 1.42857142857143);
+      }
+
+      &.checkbox-inline {
+        @media screen and (min-width: $screen-tablet) {
+          font-size: ($font-size-base * 1.2);
+        }
+      }
+    }
+
+    .btn-primary {
+      background-color: $src-medium-bright;
+      border: 0;
+      @media screen and (min-width: $screen-tablet) {
+        margin-bottom: 65px;
+      }
+    }
   }
 }
