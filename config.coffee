@@ -8,9 +8,13 @@ exports.config =
       #http://stackoverflow.com/questions/11074297/brunch-how-to-disable-requirejs-module-wrapping
       #The rationale was that brunch already does commonJS so each module is already wrapped.
       #But we set wrapper to false because angular is a suitable replacement for wrapping modules.
+
+      #The `bare` flag is what coffee-script-brunch sends to the REAL coffee-script compiler. So this tells the real
+      #coffeescript to not wrap things.
   modules:
-    definition: false
-    wrapper: false
+    definition: false #this is what allows you to call `x = require('/views/x'). The opposite is AMD syntax. Ex:
+      # define(my_method,[req1,req2], func(){});
+    wrapper: false # this wraps everything in a commonJS module. it calls something like `register(funcion(){});`
   paths:
     public: '_public'
   files:
