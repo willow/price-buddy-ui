@@ -1,16 +1,7 @@
 exports.config =
-# See docs at http://brunch.readthedocs.org/en/latest/config.html.
+  # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
     assets: /^app\/assets\//
-    vendor: -> true
-      #hack to force brunch-coffeescript to wrap anonymous functions
-      #https://github.com/brunch/coffee-script-brunch/pull/6#issuecomment-12538936
-      #http://stackoverflow.com/questions/11074297/brunch-how-to-disable-requirejs-module-wrapping
-      #The rationale was that brunch already does commonJS so each module is already wrapped.
-      #But we set wrapper to false because angular is a suitable replacement for wrapping modules.
-  modules:
-    definition: false
-    wrapper: false
   paths:
     public: '_public'
   files:
