@@ -145,3 +145,9 @@ angular.module('app.controllers', [])
 angular.module('app.directives', ['app.services'])
 angular.module('app.filters', [])
 angular.module('app.services', [])
+
+
+React.render(
+  new React.DOM.div({},'something'),
+  document.getElementsByClassName("stuff")[0]
+)
