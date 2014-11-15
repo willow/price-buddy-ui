@@ -22,10 +22,9 @@ exports.config =
       joinTo:
         'js/app.js': /^app/
         'js/vendor.js': (path) ->
-          (path.indexOf("vendor") isnt -1 or path.indexOf("bower_components") isnt -1) \
-          and path.indexOf("modernizr") is -1
+          ("vendor" in path or "bower_components" in path) and "modernizr" not in path
         'js/modernizr.js': (path) ->
-          path.indexOf('modernizr') isnt -1
+          'modernizr' in path
       order:
         before:[
           #jquery must be loaded before angular otherwise jqLite will be used
