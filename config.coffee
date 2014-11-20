@@ -1,7 +1,12 @@
+coffeeify = require('coffeeify')
+
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
     assets: /^app\/assets\//
+  modules:
+    wrapper: false
+    definition: false
   paths:
     public: '_public'
   files:
@@ -48,6 +53,12 @@ exports.config =
     jade_angular:
       modules_folder: 'partials'
       locals: {}
-
-# Enable or disable minifying of result js / css files.
-# minify: true
+    browserify:
+      bundles:
+        'javascripts/app.js':
+          entry: 'app/scripts/ng-modules/main/app.coffee'
+          instanceOptions:
+            extensions: 'js coffee'
+          bundleOptions:
+            transform: ['coffeeify']
+          onBeforeBundle: (bundler) -> bundler.transform coffeeify
