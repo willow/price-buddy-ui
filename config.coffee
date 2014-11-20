@@ -1,12 +1,7 @@
-coffeeify = require('coffeeify')
-
 exports.config =
-  # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
     assets: /^app\/assets\//
-  modules:
-    wrapper: false
-    definition: false
+    vendor: -> false
   paths:
     public: '_public'
   files:
@@ -14,9 +9,10 @@ exports.config =
       joinTo:
         'js/app.js': /^app/
         'js/vendor.js': (path) ->
-          ("vendor" in path or "bower_components" in path) and "modernizr" not in path
+          (path.indexOf("vendor") isnt -1 or path.indexOf("bower_components") isnt -1) and
+          path.indexOf("modernizr") is -1
         'js/modernizr.js': (path) ->
-          'modernizr' in path
+          path.indexOf('modernizr') isnt -1
       order:
         before:[
           #jquery must be loaded before angular otherwise jqLite will be used
@@ -53,12 +49,3 @@ exports.config =
     jade_angular:
       modules_folder: 'partials'
       locals: {}
-    browserify:
-      bundles:
-        'javascripts/app.js':
-          entry: 'app/scripts/ng-modules/main/app.coffee'
-          instanceOptions:
-            extensions: 'js coffee'
-          bundleOptions:
-            transform: ['coffeeify']
-          onBeforeBundle: (bundler) -> bundler.transform coffeeify
