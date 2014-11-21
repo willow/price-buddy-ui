@@ -27,6 +27,7 @@
     "ngmin-uglify-js-brunch": "1.7.2",
     "process-env-brunch": "1.4.4-d",
     "react": "0.12.1",
+    "react-coffee-brunch": "0.0.1",
     "sass-brunch": "1.8.1"
   }
 }
