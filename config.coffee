@@ -38,14 +38,7 @@ exports.config =
           #our assets should be loaded before vendor assets so we can override sass variables
           'app/styles/app.scss'
         ]
-
-    templates:
-      joinTo:
-        'js/dontUseMe': /^app/ # dirty hack for Jade compiling.
-
   plugins:
-    jade:
-      pretty: yes # Adds pretty-indentation whitespaces to output (false by default)
-    jade_angular:
-      modules_folder: 'partials'
-      locals: {}
+    jaded:
+      jade:
+        pretty: yes
