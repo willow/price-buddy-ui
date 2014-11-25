@@ -38,7 +38,11 @@ exports.config =
           #our assets should be loaded before vendor assets so we can override sass variables
           'app/styles/app.scss'
         ]
+    templates:
+      joinTo:'js/app.js': /^app/
   plugins:
     jaded:
       jade:
         pretty: yes
+    jadeReact:
+      exclude: /\.static\.jade/

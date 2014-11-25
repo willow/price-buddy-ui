@@ -1,3 +1,4 @@
+- const React = require("bower_components/react/react")
 nav#main-nav.navbar.navbar-default.navbar-fixed-top(ng-class="{'hidden':state.current.data.style.AdminStyle}")
   .container
     .navbar-header
