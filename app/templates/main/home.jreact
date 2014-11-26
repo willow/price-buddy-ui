@@ -1,3 +1,5 @@
+- const React = require("bower_components/react/react")
+
 #home-container(ng-controller='HomeCtrl')
   
   section#welcome-blurb

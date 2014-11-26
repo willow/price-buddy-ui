@@ -1,3 +1,5 @@
+- const React = require("bower_components/react/react")
+
 footer#main-footer(ng-class="{'navbar hidden':state.current.data.style.webAppStyle}")
   .container
     .row
