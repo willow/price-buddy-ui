@@ -6,8 +6,7 @@ html.no-js
     meta(name='viewport', content='width=device-width', initial-scale='1.0')
     meta(name='description', content='')
     meta(name='author', content='')
-    base(href='/')
-    title(ng-bind-template='{{pageTitle}}')
+    title()
     link(href='//fonts.googleapis.com/css?family=Montserrat|Lato', rel='stylesheet', type='text/css')
     link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css', rel='stylesheet', type='text/css')
     link(rel='stylesheet', href='/css/app.css')
@@ -30,13 +29,11 @@ html.no-js
       window.brunch['auto-reload'] = {
         enabled: true
       };
-  body(ng-controller='AppCtrl', ng-class="{'alt-section web-app-body':state.current.data.style.webAppStyle,'admin-body':state.current.data.style.AdminStyle, 'modal-open':state.current.data.modal}")
+  body(ng-class="{'alt-section web-app-body':state.current.data.style.webAppStyle,'admin-body':state.current.data.style.AdminStyle, 'modal-open':state.current.data.modal}")
     #nav
     #main-content
     #footer
     //- JavaScript at the bottom for fast page loading
-    //- Google map must be loaded first because the ng-google-map-service assumes the google object is available
-    script(src='//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=drawing')
     script(src='/js/vendor.js')
     script(src='/js/app.js')
     script.

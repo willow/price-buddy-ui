@@ -18,6 +18,7 @@
       form.form-horizontal(role='form')
         .form-group
           label.col-md-2.col-md-offset-2.control-label Room Type
+
           .col-md-2
             select.form-control
               option Private Room

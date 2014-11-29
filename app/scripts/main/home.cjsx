@@ -3,7 +3,7 @@
 
 React = require("bower_components/react/react")
 
-NavTemplate = require('templates/main/nav')
+HomeTemplate = require('templates/main/home')
 
 module.exports = React.createClass
-  render: NavTemplate
+  render: HomeTemplate
