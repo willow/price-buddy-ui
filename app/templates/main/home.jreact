@@ -21,11 +21,15 @@
 
           .col-md-2
             select.form-control
-              option Private Room
-          label.col-md-2.control-label Room Type
+              each key, val in this.props.roomTypes
+                option(value=val)= key
+
+          label.col-md-2.control-label Guests
           .col-md-2
             select.form-control
-              option Private Room
+              each key, val in this.props.guestCounts
+                option(value=val)= key
+
         .form-group
           label.col-md-2.col-md-offset-2.control-label Size
           .col-md-2
