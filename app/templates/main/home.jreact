@@ -21,13 +21,13 @@
 
           .col-md-2
             select.form-control
-              each key, val in this.props.roomTypes
+              each key, val in this.state.details.roomTypes
                 option(value=val)= key
 
           label.col-md-2.control-label Guests
           .col-md-2
             select.form-control
-              each key, val in this.props.guestCounts
+              each key, val in this.state.details.guestCounts
                 option(value=val)= key
 
         .form-group

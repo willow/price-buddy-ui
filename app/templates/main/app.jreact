@@ -1,0 +1,9 @@
+- const React = require("bower_components/react/react")
+- const Nav =  require('scripts/main/nav')
+- const Home = require('scripts/main/home')
+- const Footer = require('templates/main/footer')
+
+div
+  Nav
+  Home
+  Footer

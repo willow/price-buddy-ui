@@ -21,6 +21,6 @@
     "bootstrap-sass-official": "3.3.0",
     "momentjs": "2.5.1",
     "react": "~0.12.1",
-    "fluxxor": "~1.5.1"
+    "reflux": "~0.2.1"
   }
 }

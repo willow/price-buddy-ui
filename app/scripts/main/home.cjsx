@@ -2,15 +2,27 @@
 
 
 React = require("bower_components/react/react")
-
-Fluxxor = require("bower_components/fluxxor/build/fluxxor.min")
-FluxMixin = Fluxxor.FluxMixin React
-StoreWatchMixin = Fluxxor.StoreWatchMixin
+Reflux = require("bower_components/reflux/dist/reflux")
 
 HomeTemplate = require('templates/main/home')
+RentalStores = require('scripts/rental/stores')
 
 module.exports = React.createClass
-  mixins: [FluxMixin, StoreWatchMixin("RentalStore")]
+  mixins: [Reflux.ListenerMixin]
+  getInitialState: ->
+    details: RentalStores.rentalDetailsStore.getInitialState()
+
+  componentDidMount: ->
+    @listenTo RentalStores.rentalPriceStore, @onRentalPriceStoreChange
+    @listenTo RentalStores.rentalDetailsStore, @onRentalDetailsStoreChange
+
+  onRentalPriceStoreChange: (rentalPriceData) ->
+    console.log ' on price change '
+    console.log rentalPriceData
+
+  onRentalDetailsStoreChange: (rentalDetailsData) ->
+    console.log ' on details change '
+    console.log rentalDetailsData
+
   render: HomeTemplate
 
-  getStateFromFlux: -> {}
