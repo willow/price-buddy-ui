@@ -15,33 +15,36 @@
       h4.text-center
         | Enter the details of your rental to find your estimated value
 
-      form.form-horizontal(role='form')
+      form.form-horizontal(role='form',onSubmit=this.handleSubmit)
         .form-group
           label.col-md-2.col-md-offset-2.control-label Room Type
 
           .col-md-2
             select.form-control
               each key, val in this.state.details.roomTypes
-                option(value=val)= key
+                option(value=val, key=key)= key
 
         .form-group
           label.col-md-2.col-md-offset-2.control-label Guests
           .col-md-2
             select.form-control
               each key, val in this.state.details.guestCounts
-                option(value=val)= key
+                option(value=val,key=key)= key
 
         .form-group
           label.col-md-2.col-md-offset-2.control-label Size
           .col-md-2
             select.form-control
-              option Private Room
+              each key, val in this.state.details.bedroomCounts
+                option(value=val,key=key)= key
           .col-md-2
            select.form-control
-              option Private Room
+             each key, val in this.state.details.bathroomCounts
+               option(value=val,key=key)= key
           .col-md-2
             select.form-control
-              option Private Room
+              each key, val in this.state.details.bedCounts
+                option(value=val,key=key)= key
 
         .form-group
           label.col-md-2.col-md-offset-2.control-label Zip Code
@@ -62,5 +65,5 @@
             label.checkbox-inline
               input(type="checkbox", id="inlineCheckbox1", value="option1")
               | Wireless Internet
-      .row
-        button.btn.btn-primary.btn-lg.center-block Tell Me
+        .row
+          input.btn.btn-primary.btn-lg.center-block(type='submit',value='Tell Me')
