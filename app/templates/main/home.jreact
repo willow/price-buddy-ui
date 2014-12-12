@@ -24,7 +24,8 @@
               each key, val in this.state.details.roomTypes
                 option(value=val)= key
 
-          label.col-md-2.control-label Guests
+        .form-group
+          label.col-md-2.col-md-offset-2.control-label Guests
           .col-md-2
             select.form-control
               each key, val in this.state.details.guestCounts
@@ -41,10 +42,12 @@
           .col-md-2
             select.form-control
               option Private Room
+
         .form-group
           label.col-md-2.col-md-offset-2.control-label Zip Code
           .col-md-2
             input.form-control(type='text')
+
         .form-group
           label.col-md-2.col-md-offset-2.control-label Amenities
           .col-md-2
