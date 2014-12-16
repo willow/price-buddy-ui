@@ -53,17 +53,9 @@
 
         .form-group
           label.col-md-2.col-md-offset-2.control-label Amenities
-          .col-md-2
-            label.checkbox-inline
-              input(type="checkbox", id="inlineCheckbox1", value="option1")
-              | Wireless Internet
-          .col-md-2
-            label.checkbox-inline
-              input(type="checkbox", id="inlineCheckbox1", value="option1")
-              | Wireless Internet
-          .col-md-2
-            label.checkbox-inline
-              input(type="checkbox", id="inlineCheckbox1", value="option1")
-              | Wireless Internet
+          each key, val in this.state.details.amenities
+            .col-md-2
+              label.checkbox-inline
+                input(type="checkbox", value=val)= key
         .row
           input.btn.btn-primary.btn-lg.center-block(type='submit',value='Tell Me')

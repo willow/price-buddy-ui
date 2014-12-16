@@ -54,6 +54,10 @@ rentalDetailsStore = Reflux.createStore(
       "5": "5 Beds"
       "6": "6 Beds"
       "7": "7 Beds"
+    amenities:
+      "wifi": "Wireless Internet"
+      "tv": "TV"
+      "kitchen": "Kitchen"
 )
 
 module.exports =
