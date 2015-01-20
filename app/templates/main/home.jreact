@@ -56,6 +56,7 @@
           each key, val in this.state.details.amenities
             .col-md-2
               label.checkbox-inline
-                input(type="checkbox", value=val)= key
+                input.amenity-selection(type="checkbox", data-personalize-state, value=val, name=val)= key
+                input(name=val,value=false,type="hidden")
         .row
           input.btn.btn-primary.btn-lg.center-block(type='submit',value='Tell Me')
